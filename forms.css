@@ -1,0 +1,86 @@
+header,h1{
+    background-color: rgb(173, 230, 244);
+    color: rgb(65, 65, 227);
+    padding: 12px;
+    text-align: center;
+    font: small-caps 100%/200% serif;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+label{
+    color: rgb(88, 48, 173);
+    text-align: center;
+}
+
+label.uno{
+    color: rgb(180, 159, 224);
+    text-align: center;
+}
+
+p{
+    color: rgb(88, 48, 173);
+    text-align: center; 
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #b593f4;
+  color: white;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #93a9f1;
+  }
+
+  input.unoo[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f5a9f5;
+    border-bottom: 2px solid rgb(235, 99, 183);
+  }
+
+  ol {
+    counter-reset: section;
+    list-style-type: none;
+  }
+  
+  li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+    color: rgb(238, 162, 91);
+    text-align: center;
+  }
+
+  body {
+    counter-reset: section;
+  }
+  
+  h1.counter {
+    counter-reset: subsection;
+    color: rgb(238, 162, 91);
+    text-align: center;
+    background-color: rgb(242, 243, 244);
+  }
+  
+  
+  
+  h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+    color: rgb(238, 162, 91);
+    text-align: center;
+  }
